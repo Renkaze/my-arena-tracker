@@ -1,4 +1,4 @@
-FROM iprobedroid/swgoh-arena-tracker:beta-23 as builder
+FROM Renkaze/my-arena-tracker:beta-23 as builder
 FROM mcr.microsoft.com/dotnet/runtime:5.0
 WORKDIR /app
 COPY --from=builder /app .
